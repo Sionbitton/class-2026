@@ -1,0 +1,36 @@
+/* =============================================
+   reset.css - a simple CSS reset / normalizer
+   This makes every browser start with the same
+   base styles, so the site looks the same everywhere.
+   It is imported into style.css with @import.
+   ============================================= */
+
+/* Every element uses the same box model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove the default space around the page */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth scrolling when clicking anchor links (like Back to Top) */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media should never overflow its container */
+img,
+video,
+audio {
+    max-width: 100%;
+}
+
+/* Tables look the same in every browser */
+table {
+    border-spacing: 0;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Frozen Fork - Order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/restaurantIconTake2.png">
+</head>
+
+<body>
+
+    <header id="top">
+        <h1 id="main-title">The Frozen Fork</h1>
+        <p class="tagline">Serving fresh food in the coldest place on Earth</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="aboutUs.html">About</a>
+    </nav>
+
+    <div class="page-content">
+
+        <div class="section-banner">Order Online</div>
+
+        <h2>Place Your Order</h2>
+        <p>Fill in the form below and we will have your food ready.
+            Not sure what you want? <a href="menu.html">Browse the menu</a> first.</p>
+
+        <!-- Beginner-friendly order form (it does not really send anything) -->
+        <form class="order-form">
+
+            <label for="customer-name">Name</label>
+            <input type="text" id="customer-name" name="customer-name" placeholder="Your name" required>
+
+            <label for="customer-phone">Phone</label>
+            <input type="tel" id="customer-phone" name="customer-phone" placeholder="+672 ..." required>
+
+            <label for="customer-email">Email</label>
+            <input type="email" id="customer-email" name="customer-email" placeholder="you@example.com">
+
+            <label for="order-type">Pickup or Delivery</label>
+            <select id="order-type" name="order-type">
+                <option>Pickup</option>
+                <option>Delivery</option>
+            </select>
+
+            <label for="pickup-time">Pickup Time</label>
+            <input type="time" id="pickup-time" name="pickup-time">
+
+            <label for="order-notes">Order Notes</label>
+            <textarea id="order-notes" name="order-notes" rows="4"
+                placeholder="Tell us what you would like to order"></textarea>
+
+            <button type="submit">Place Order</button>
+
+        </form>
+
+        <p class="special-note">
+            Note: Orders may take longer to arrive during Antarctic snowstorms. Thank you for your patience!
+        </p>
+
+    </div>
+
+    <footer>
+        <p>104 Terra Vista Street, McMurdo Station, Ross Island, Antarctica</p>
+        <p>
+            <a href="menu.html">Menu</a> &nbsp;|&nbsp;
+            <a href="order.html">Order</a> &nbsp;|&nbsp;
+            <a href="aboutUs.html">About</a>
+        </p>
+        <p>&copy; 2026 The Frozen Fork. All rights reserved.</p>
+    </footer>
+
+    <a class="back-to-top" href="#top">&#8593; Top</a>
+
+</body>
+</html>
