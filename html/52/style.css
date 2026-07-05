@@ -1,0 +1,663 @@
+/* =============================================
+   THE FROZEN FORK - Polished Stylesheet
+   ============================================= */
+
+/* --- CSS Reset Import (@import brings another CSS file into this one) --- */
+@import url('reset.css');
+
+/* --- Google Font Import (two web fonts: Bebas Neue for headings, Raleway for body) --- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@400;600;700;800&display=swap');
+
+/* --- Base Body --- */
+body {
+    background-color: #EAFBFF;
+    /* hex color - light icy blue */
+    color: #0B2E3D;
+    font-size: 17px;
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    /* line-height */
+}
+
+::selection {
+    background-color: #1B6B8C;
+    color: #ffffff;
+}
+
+/* --- Header / Title Bar --- */
+header {
+    background: linear-gradient(to right, #0B2E3D, #1B6B8C, #8EEAF2);
+    /* CSS gradient */
+    padding: 40px 20px 18px;
+    text-align: center;
+}
+
+#main-title {
+    background: none;
+    color: #ffffff;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    /* heading web font - different from the body font */
+    font-size: 52px;
+    font-weight: 400;
+    /* Bebas Neue only comes in one weight */
+    letter-spacing: 6px;
+    /* letter-spacing */
+    text-transform: uppercase;
+    /* text-transform */
+    text-shadow: 2px 2px 8px #0B2E3D;
+    /* text-shadow */
+    border-bottom: none;
+    margin: 0 0 6px 0;
+    padding: 0;
+}
+
+#main-title::before,
+#main-title::after {
+    content: "\2744";
+    font-size: 26px;
+    color: #8EEAF2;
+    vertical-align: middle;
+    margin: 0 18px;
+    text-shadow: none;
+    opacity: 0.9;
+}
+
+.tagline {
+    color: #EAFBFF;
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0.85;
+    /* opacity */
+    margin: 0 0 14px 0;
+}
+
+/* --- Navigation Bar --- */
+nav {
+    background: linear-gradient(to right, #1B6B8C, #0B2E3D);
+    /* CSS gradient */
+    padding: 12px 10px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(11, 46, 61, 0.25);
+    position: relative;
+    z-index: 5;
+}
+
+nav a {
+    display: inline-block;
+    /* display: inline-block */
+    color: #EAFBFF;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* text-transform */
+    letter-spacing: 2px;
+    padding: 9px 16px;
+    margin: 3px;
+    border-radius: 999px;
+    cursor: pointer;
+    /* cursor */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #8EEAF2;
+    color: #0B2E3D;
+    transform: translateY(-2px);
+}
+
+nav a:active {
+    transform: translateY(0);
+}
+
+nav a:visited {
+    color: #EAFBFF;
+}
+
+nav a:visited:hover {
+    color: #0B2E3D;
+}
+
+/* --- Hero Section (Home Page) --- */
+.hero {
+    background-image: url('images/srImage.jpeg');
+    /* background-image */
+    background-repeat: no-repeat;
+    /* background-repeat */
+    background-size: cover;
+    /* background-size */
+    background-position: center center;
+    /* background-position */
+    position: relative;
+    /* position: relative */
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba(11, 46, 61, 0.28);
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+    /* z-index */
+    background-color: rgba(11, 46, 61, 0.66);
+    color: #ffffff;
+    padding: 32px 44px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 16px 40px rgba(11, 46, 61, 0.4);
+    backdrop-filter: blur(3px);
+    text-align: center;
+    max-width: 580px;
+    margin: 0 20px;
+}
+
+.hero-overlay h2 {
+    color: #8EEAF2;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+    text-shadow: 1px 1px 4px #0B2E3D;
+}
+
+.hero-overlay p {
+    color: #ffffff;
+    font-size: 17px;
+    margin: 0;
+}
+
+/* --- Section Divider Banner --- */
+.section-banner {
+    background: linear-gradient(to right, #1B6B8C, #0B2E3D);
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 46px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transform: skew(-4deg);
+    /* transform: skew() */
+    width: fit-content;
+    margin: 56px auto 22px;
+    border-radius: 4px;
+    box-shadow: 4px 6px 0 rgba(142, 234, 242, 0.55);
+}
+
+/* --- Page Content Wrapper --- */
+.page-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 26px 22px 70px;
+    text-align: center;
+}
+
+/* --- Headings --- */
+h1 {
+    color: #0B2E3D;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    /* heading web font */
+    font-size: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: #8EEAF2;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #1B6B8C;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    /* heading web font */
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 18px 0 12px;
+}
+
+h3 {
+    color: #0B2E3D;
+    font-size: 20px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.page-content > p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Button-style links --- */
+.btn {
+    display: inline-block;
+    background: linear-gradient(to right, #1B6B8C, #0B2E3D);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 34px;
+    margin-top: 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(27, 107, 140, 0.35);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(27, 107, 140, 0.45);
+}
+
+/* --- About Us Float Layout --- */
+.about-float-img {
+    float: left;
+    /* float */
+    width: 240px;
+    margin: 6px 26px 12px 0;
+    border-radius: 12px;
+    border: 3px solid #1B6B8C;
+    box-shadow: 0 10px 24px rgba(11, 46, 61, 0.25);
+}
+
+.about-text-block {
+    overflow: hidden;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #cfeaf3;
+    border-radius: 14px;
+    padding: 26px 30px;
+    box-shadow: 0 6px 18px rgba(27, 107, 140, 0.12);
+}
+
+.about-text-block h2 {
+    margin-top: 0;
+}
+
+.clear-float {
+    clear: both;
+    /* clear */
+}
+
+/* --- Menu Cards --- */
+.menu-item {
+    display: inline-block;
+    /* display: inline-block */
+    padding: 18px;
+    margin: 14px 10px;
+    border: 1px solid #cfeaf3;
+    border-radius: 14px;
+    width: 285px;
+    max-width: 92%;
+    vertical-align: top;
+    /* vertical-align */
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0 4px 14px rgba(27, 107, 140, 0.14);
+    /* rgb color in rgba() */
+    cursor: pointer;
+    /* cursor */
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px);
+    /* translate */
+    box-shadow: 0 16px 32px rgba(27, 107, 140, 0.28);
+    border-color: #8EEAF2;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.menu-item img:hover {
+    opacity: 0.9;
+    /* opacity */
+    transform: scale(1.03);
+    /* scale */
+}
+
+.menu-item h3 {
+    font-style: italic;
+    font-size: 19px;
+    margin: 4px 0 8px;
+}
+
+.menu-item p {
+    font-size: 15px;
+    color: #3d5a68;
+    margin: 0 0 14px;
+}
+
+/* --- Customer Favorites Badge --- */
+.fav-badge {
+    display: inline-block;
+    background-color: #1B6B8C;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transform: rotate(-2deg);
+    /* rotate */
+    vertical-align: middle;
+    /* vertical-align */
+    box-shadow: 0 4px 10px rgba(11, 46, 61, 0.25);
+}
+
+/* --- Special Notes --- */
+.special-note {
+    width: 420px;
+    max-width: 92%;
+    margin: 30px auto;
+    padding: 16px 22px;
+    border: 1px solid #bfe6f0;
+    border-left: 6px solid #1B6B8C;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #0B2E3D;
+    font-size: 15.5px;
+    line-height: 1.6;
+    text-align: left;
+    box-shadow: 0 6px 16px rgba(27, 107, 140, 0.12);
+}
+
+/* --- Special / Italic Text --- */
+h3.special-text,
+span.special-text {
+    font-style: italic;
+}
+
+p.special-text {
+    font-style: italic;
+    color: #1B6B8C;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* --- Audio / Video Section --- */
+.media-section {
+    background-color: #ffffff;
+    border: 1px solid #cfeaf3;
+    border-top: 6px solid #1B6B8C;
+    border-radius: 14px;
+    padding: 30px 28px 34px;
+    margin: 34px auto;
+    max-width: 640px;
+    text-align: center;
+    box-shadow: 0 10px 28px rgba(27, 107, 140, 0.14);
+}
+
+.media-section h2 {
+    margin-top: 0;
+    color: #0B2E3D;
+}
+
+.media-section p {
+    color: #3d5a68;
+}
+
+audio,
+video {
+    width: 100%;
+    max-width: 520px;
+    margin-top: 12px;
+    border-radius: 10px;
+}
+
+video {
+    box-shadow: 0 12px 30px rgba(11, 46, 61, 0.3);
+}
+
+/* --- Footer --- */
+footer {
+    background: linear-gradient(to right, #0B2E3D, #1B6B8C);
+    /* CSS gradient */
+    color: #EAFBFF;
+    text-align: center;
+    padding: 36px 18px 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    border-top: 5px solid #8EEAF2;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+footer a {
+    color: #8EEAF2;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 4px;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* --- Hours Table --- */
+.hours-table {
+    margin: 26px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 460px;
+    background-color: #ffffff;
+    border: 1px solid #cfeaf3;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 26px rgba(27, 107, 140, 0.16);
+}
+
+.hours-table th,
+.hours-table td {
+    padding: 12px 24px;
+    text-align: left;
+}
+
+.hours-table th {
+    background: linear-gradient(to right, #1B6B8C, #0B2E3D);
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.hours-table td {
+    border-top: 1px solid #dff2f8;
+}
+
+.hours-table td:first-child {
+    font-weight: 700;
+    color: #1B6B8C;
+}
+
+.hours-table tr:nth-child(even) td {
+    background-color: #f0fbfe;
+}
+
+/* --- rgb() color used on contact page --- */
+.contact-highlight {
+    color: rgb(27, 107, 140);
+    /* rgb color */
+    font-weight: bold;
+}
+
+/* --- ul styling --- */
+ul {
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.9;
+    margin: 8px 0 14px;
+}
+
+ul li::marker {
+    color: #1B6B8C;
+}
+
+/* --- img default --- */
+img {
+    width: 300px;
+    max-width: 100%;
+}
+
+/* --- link colors --- */
+a {
+    color: #0B2E3D;
+    font-weight: bold;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+a:focus-visible {
+    outline: 2px solid #1B6B8C;
+    outline-offset: 2px;
+}
+
+/* --- Back to Top button (position: fixed) --- */
+.back-to-top {
+    position: fixed;
+    /* stays in the corner even when you scroll */
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    background-color: #1B6B8C;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 999px;
+    box-shadow: 0 6px 16px rgba(11, 46, 61, 0.35);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-to-top:hover {
+    background-color: #0B2E3D;
+    transform: translateY(-3px);
+}
+
+.back-to-top:visited {
+    color: #ffffff;
+}
+
+/* =============================================
+   Media Queries - make the site look better
+   on different screen sizes
+   ============================================= */
+
+/* Tablets and small screens */
+@media (max-width: 720px) {
+    #main-title {
+        font-size: 36px;
+        letter-spacing: 3px;
+    }
+
+    #main-title::before,
+    #main-title::after {
+        font-size: 18px;
+        margin: 0 8px;
+    }
+
+    .tagline {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    nav a {
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 7px 12px;
+    }
+
+    .hero {
+        height: 320px;
+    }
+
+    .hero-overlay {
+        padding: 22px 24px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 26px;
+    }
+
+    .section-banner {
+        padding: 10px 26px;
+        letter-spacing: 2px;
+    }
+
+    /* menu cards stack in one column instead of side by side */
+    .menu-item {
+        width: 100%;
+        margin: 12px 0;
+    }
+
+    /* the About Us photo stops floating and sits above the text */
+    .about-float-img {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto 16px;
+    }
+
+    .about-text-block {
+        padding: 20px;
+    }
+}
+
+/* Phones */
+@media (max-width: 430px) {
+    #main-title {
+        font-size: 30px;
+    }
+
+    /* hide the snowflakes so the title fits */
+    #main-title::before,
+    #main-title::after {
+        display: none;
+    }
+
+    .hero {
+        height: 260px;
+    }
+
+    .special-note {
+        width: 100%;
+    }
+
+    .back-to-top {
+        bottom: 12px;
+        right: 12px;
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+}
