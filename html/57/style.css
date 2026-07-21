@@ -1,0 +1,234 @@
+body {
+
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.padding {
+
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header,
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+form input {
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+
+}
+
+.num {
+    text-align: right;
+}
+
+form label {
+
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+}
+
+footer {
+    bottom: 0;
+
+}
+
+header {
+
+    top: 0;
+
+}
+
+.separate {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.container {
+
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+header ul.separate {
+    flex-direction: row;
+}
+
+.column img {
+
+    width: 100%;
+}
+
+header .container {
+
+    padding: 15px;
+}
+
+
+
+.column {
+
+    flex: 1;
+    padding: 0 30px;
+    border-right: 1px solid grey;
+    text-align: center;
+}
+
+.column p {
+    text-align: justify;
+}
+
+.column:last-child {
+
+    border-right: none;
+}
+
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+header nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+main {
+    color: black;
+}
+
+.grey-block {
+    background-color: lightgrey;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.main-gb {
+    padding: 60px 30px 30px 30px;
+
+}
+
+.pcs {
+
+    font-style: italic;
+}
+
+.uppercase {
+
+    text-transform: uppercase;
+}
+
+
+.capitalize {
+    text-transform: capitalize;
+
+}
+
+th span {
+
+    display: inline-block;
+}
+
+th span::first-letter {
+    text-transform: uppercase;
+}
+
+th::first-letter {
+    text-transform: uppercase;
+}
+
+.about-us {
+    margin-bottom: 100px;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: blue;
+
+}
+
+table {
+    border-collapse: collapse;
+
+    margin: 0 auto;
+
+
+}
+
+.wrapper {
+    width: 100%;
+    overflow-x: auto;
+
+}
+
+.first-table {
+
+    font-weight: bold;
+    text-transform: capitalize;
+
+    margin: 20px;
+}
+
+
+.blue-row {
+
+    background-color: lightblue;
+}
+
+.total-red {
+    color: red;
+
+}
+
+@media(min-width:1000px) {
+    form div {
+        display: inline-block;
+    }
+}
+
+@media(max-width:800px) {
+
+    .separate {
+        flex-direction: column;
+
+    }
+
+    .column {
+        padding: 0;
+        border-right: none;
+    }
+
+
+
+
+}
