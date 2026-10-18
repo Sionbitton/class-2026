@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 0.5em;
+      }
+
+      td {
+        overflow-wrap: anywhere;
+      }
+
+      #contactsTable button {
+        white-space: nowrap;
+      }
+
+      .form-group label {
+        display: inline-block;
+        width: 4em;
+      }
+
+      .form-group {
+        margin-bottom: 0.5em;
+      }
+
+      #addContact {
+        display: none;
+
+        background-color: lightcyan;
+        border: 1px solid black;
+        padding: 1em;
+        width: 15em;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #add {
+        margin-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="contactsTable">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>phone</th>
+          <th>address</th>
+          <th>email</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="6">no contacts loaded</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button id="add">add contact</button>
+    <button id="load">load contacts</button>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni aut ipsum architecto vel, impedit
+        aspernatur qui unde quis facilis! Delectus consequuntur vel sit? Nemo debitis, distinctio assumenda neque fugiat
+        recusandae laborum error perspiciatis cupiditate tempore veniam amet praesentium delectus fugit temporibus natus
+        veritatis accusantium rerum. Architecto, ipsum eligendi ducimus ipsam blanditiis pariatur quo veritatis hic
+        magni, laudantium tenetur, voluptatibus ad assumenda dolorum odio! Culpa illo distinctio exercitationem earum
+        quae harum facilis minus quas iste nesciunt, eius accusamus sapiente dolore fugiat natus et possimus tempora
+        molestiae sint ea laudantium veniam ipsum pariatur? Sint et harum rerum. Deserunt perferendis sequi eius rerum,
+        maxime omnis, ipsam minus itaque, perspiciatis nesciunt expedita. Nihil eligendi officiis ex porro inventore,
+        consectetur neque modi saepe necessitatibus, consequatur ipsa nam impedit, iusto quae. Amet nesciunt nemo magni
+        velit, a nulla explicabo! Assumenda mollitia ullam sint voluptas saepe ab eos sunt eligendi officia placeat.
+        Repellat provident unde quod natus laborum, cumque hic debitis nostrum perferendis nemo est voluptatibus
+        asperiores reprehenderit vel laboriosam quas deserunt consequuntur, veritatis, quam possimus. Harum,
+        necessitatibus accusamus nemo repellendus tempora consequuntur earum minus ab officia optio fuga quia labore
+        esse alias quisquam cum quasi expedita eveniet unde veniam consequatur, ea quas. Delectus, ex nihil.</p>
+
+    <form id="addContact">
+      <div class="form-group">
+        <label for="id">id:</label>
+        <input id="id" type="number" min="1" step="1" required />
+      </div>
+      <div class="form-group">
+        <label for="name">name:</label>
+        <input id="name" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">phone:</label>
+        <input id="phone" />
+      </div>
+      <div class="form-group">
+        <label for="address">address:</label>
+        <input id="address" />
+      </div>
+      <div class="form-group">
+        <label for="email">email:</label>
+        <input id="email" />
+      </div>
+      <button>add</button>
+      <button type="reset">reset</button>
+      <button type="button" id="cancel">cancel</button>
+    </form>
+    <script src="contactsHW.js" type="module"></script>
+  </body>
+</html>
+

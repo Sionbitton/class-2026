@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "name": "Emma Carter",
+        "phone": "202-555-0101",
+        "address": "101 Maple Street, Sampleville, NY 10001",
+        "email": "emma.carter@example.com"
+    },
+    {
+        "id": 2,
+        "name": "Liam Brooks",
+        "phone": "202-555-0102",
+        "address": "202 Oak Avenue, Sampleville, NY 10001",
+        "email": "liam.brooks@example.com"
+    },
+    {
+        "id": 3,
+        "name": "Olivia Bennett",
+        "phone": "202-555-0103",
+        "address": "303 Pine Road, Sampleville, NY 10001",
+        "email": "olivia.bennett@example.com"
+    },
+    {
+        "id": 4,
+        "name": "Noah Hayes",
+        "phone": "202-555-0104",
+        "address": "404 Cedar Lane, Sampleville, NY 10001",
+        "email": "noah.hayes@example.com"
+    },
+    {
+        "id": 5,
+        "name": "Ava Morgan",
+        "phone": "202-555-0105",
+        "address": "505 Birch Drive, Sampleville, NY 10001",
+        "email": "ava.morgan@example.com"
+    },
+    {
+        "id": 6,
+        "name": "Ethan Parker",
+        "phone": "202-555-0106",
+        "address": "606 Willow Court, Sampleville, NY 10001",
+        "email": "ethan.parker@example.com"
+    },
+    {
+        "id": 7,
+        "name": "Sophia Reed",
+        "phone": "202-555-0107",
+        "address": "707 Elm Street, Sampleville, NY 10001",
+        "email": "sophia.reed@example.com"
+    },
+    {
+        "id": 8,
+        "name": "Mason Clarke",
+        "phone": "202-555-0108",
+        "address": "808 Aspen Avenue, Sampleville, NY 10001",
+        "email": "mason.clarke@example.com"
+    },
+    {
+        "id": 9,
+        "name": "Isabella Scott",
+        "phone": "202-555-0109",
+        "address": "909 Spruce Road, Sampleville, NY 10001",
+        "email": "isabella.scott@example.com"
+    },
+    {
+        "id": 10,
+        "name": "Lucas Turner",
+        "phone": "202-555-0110",
+        "address": "110 Cherry Lane, Sampleville, NY 10001",
+        "email": "lucas.turner@example.com"
+    },
+    {
+        "id": 11,
+        "name": "Mia Patel",
+        "phone": "202-555-0111",
+        "address": "211 Walnut Drive, Sampleville, NY 10001",
+        "email": "mia.patel@example.com"
+    },
+    {
+        "id": 12,
+        "name": "Henry Rivera",
+        "phone": "202-555-0112",
+        "address": "312 Magnolia Court, Sampleville, NY 10001",
+        "email": "henry.rivera@example.com"
+    },
+    {
+        "id": 13,
+        "name": "Charlotte Kim",
+        "phone": "202-555-0113",
+        "address": "413 Poplar Street, Sampleville, NY 10001",
+        "email": "charlotte.kim@example.com"
+    },
+    {
+        "id": 14,
+        "name": "James Foster",
+        "phone": "202-555-0114",
+        "address": "514 Chestnut Avenue, Sampleville, NY 10001",
+        "email": "james.foster@example.com"
+    },
+    {
+        "id": 15,
+        "name": "Amelia Nguyen",
+        "phone": "202-555-0115",
+        "address": "615 Cypress Road, Sampleville, NY 10001",
+        "email": "amelia.nguyen@example.com"
+    }
+]
