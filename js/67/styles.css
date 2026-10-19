@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 24px 16px;
+    color: #202820;
+    background: #f5f7f3;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+main {
+    max-width: 640px;
+    margin: auto;
+}
+h1, h2, h3 { line-height: 1.25; }
+label { display: block; margin-bottom: 8px; }
+select {
+    width: 100%;
+    padding: 12px;
+    font: inherit;
+    border: 1px solid #657460;
+    border-radius: 4px;
+    background: white;
+    color: #202820;
+}
+select:focus-visible { outline: 3px solid #305f35; outline-offset: 3px; }
+#recipePicture {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+#status { min-height: 26px; }
+li { margin-bottom: 6px; }

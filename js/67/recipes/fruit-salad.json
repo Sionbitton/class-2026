@@ -1,0 +1,11 @@
+{
+    "name": "Fruit Salad",
+    "ingredients": [
+        "1 apple, diced",
+        "1 orange, peeled and chopped",
+        "1 cup strawberries, sliced",
+        "1/2 cup blueberries",
+        "1 tablespoon lemon juice"
+    ],
+    "picture": "images/fruit-salad.svg"
+}

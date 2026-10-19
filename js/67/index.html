@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 67 | Recipe viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Recipe viewer</h1>
+        <label for="recipeSelect">Choose a recipe</label>
+        <select id="recipeSelect" disabled>
+            <option value="">Select a recipe</option>
+        </select>
+        <p id="status" role="status" aria-live="polite">Loading recipe list...</p>
+
+        <article id="recipeDetails" hidden>
+            <h2 id="recipeName"></h2>
+            <img id="recipePicture" alt="" width="640" height="360">
+            <h3>Ingredients</h3>
+            <ul id="ingredients"></ul>
+        </article>
+    </main>
+    <script src="recipes.js" type="module"></script>
+</body>
+</html>

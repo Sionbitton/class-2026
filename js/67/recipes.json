@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Baked Potato",
+        "url": "recipes/baked-potato.json"
+    },
+    {
+        "id": 2,
+        "name": "Fruit Salad",
+        "url": "recipes/fruit-salad.json"
+    }
+]
