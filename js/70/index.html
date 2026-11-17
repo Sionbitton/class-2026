@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spud Studio • Mr. Potato Head</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- defer waits until the HTML is parsed. These scripts then run in order:
+         options.js defines the artwork; index.js uses it to run the game. -->
+    <script src="options.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="brand" href="./index.html">spud<span>studio.</span></a>
+        <span class="tag">A LITTLE CHARACTER LAB</span>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div>
+                <p class="eyebrow">WELCOME TO THE SILLY ZONE!</p>
+                <h1>Make a silly<br>potato pal!</h1>
+                <p>Pick a body. Add funny parts. Make it yours!</p>
+            </div>
+            <button id="surprise" class="primary">✦ Surprise me!</button>
+        </section>
+
+        <!-- These empty containers are filled by JavaScript using createElement. -->
+        <section class="body-picker" aria-labelledby="body-title">
+            <h2 id="body-title">1. Pick your potato</h2>
+            <div id="bodies"></div>
+        </section>
+
+        <div class="workbench">
+            <aside class="parts-panel">
+                <div class="panel-heading">
+                    <h2>2. Add funny parts</h2>
+                    <span>30 choices!</span>
+                </div>
+                <p>Tap a part to add it. Then drag it around!</p>
+                <div id="categories" aria-label="Choose a part category"></div>
+                <div id="parts" class="parts"></div>
+            </aside>
+
+            <section class="canvas-panel" aria-label="Character workbench">
+                <div class="canvas-heading">
+                    <span>YOUR MASTERPIECE</span>
+                    <span id="count">0 parts added</span>
+                </div>
+                <div id="stage" class="stage" aria-label="Potato character canvas">
+                    <!-- Our pointer handlers move the pieces, so the browser's
+                         built-in image dragging is switched off for the body. -->
+                    <img class="potato" src="media/toy-body.png"
+                         alt="Plain potato body" draggable="false">
+                </div>
+                <div class="canvas-footer">
+                    <span>Made of potato. Full of possibilities.</span>
+                    <button id="reset">↺ Start fresh</button>
+                </div>
+            </section>
+        </div>
+
+        <section class="tools" aria-label="Selected part controls">
+            <div>
+                <strong id="selection">Pick a part to get started</strong>
+                <p>Tap a part on your pal to change it. Arrow keys move it too!</p>
+            </div>
+            <!-- disabled stops clicks until JavaScript selects a part. -->
+            <div class="tool-buttons"><button id="music" type="button" aria-pressed="false">Play music</button>
+                <button id="smaller" aria-label="Make selected part smaller" disabled>− Smaller</button>
+                <button id="larger" aria-label="Make selected part larger" disabled>+ Bigger</button>
+                <button id="rotate" disabled>↻ Turn</button>
+                <button id="remove" disabled>✕ Remove</button>
+            </div>
+        </section>
+
+        <section class="save-panel" aria-labelledby="save-title">
+            <div>
+                <h2 id="save-title">3. Keep your potato pal!</h2>
+                <p>Give your pal a name, then save it below.</p>
+            </div>
+            <form id="save-form">
+                <label for="pal-name">Your pal's name</label>
+                <div>
+                    <input id="pal-name" maxlength="40" placeholder="Captain Spud" autocomplete="off">
+                    <button class="primary" type="submit">Save my pal</button>
+                </div>
+            </form>
+            <!-- role/status and aria-live let screen readers announce updates. -->
+            <p id="save-message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="gallery-section" aria-labelledby="gallery-title">
+            <div class="gallery-heading">
+                <h2 id="gallery-title">My potato heads</h2>
+                <span id="saved-count">0 saved</span>
+            </div>
+            <p>Saved in this browser on this device. Clearing browser data can remove them.</p>
+            <p id="gallery-error" role="alert" hidden></p>
+            <div id="gallery"></div>
+        </section>
+
+        <!-- .sr-only hides this visually while keeping it available to screen readers.
+             aria-label names a control; aria-labelledby points to an existing heading. -->
+        <p id="status" class="sr-only" role="status" aria-live="polite"></p>
+    </main>
+    <footer>NO RULES. JUST ROOT VEGETABLES.</footer>
+</body>
+</html>
